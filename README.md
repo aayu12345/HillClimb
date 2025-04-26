@@ -15,20 +15,17 @@ This project uses **Computer Vision** and **Automation** to simulate keyboard ke
 
 ---
 
-## 🏗 Architecture
+## 🏗 Project Architecture
 
-```plaintext
-[Webcam Input] 
-      ↓
-[OpenCV Frame Capture] 
-      ↓
-[Hand Detection → Finger Count (cvzone.HandTrackingModule)]
-      ↓
-[Gesture Interpretation (Gas / Brake / Neutral)]
-      ↓
-[Simulate Keyboard Press (pyautogui)]
-      ↓
-[Game Controlled Automatically]
+```mermaid
+flowchart TD
+    A[Webcam Input] --> B[Frame Capture (OpenCV)]
+    B --> C[Hand Detection (cvzone HandTrackingModule)]
+    C --> D[Finger Count Calculation]
+    D --> E[Gesture Interpretation (Gas / Brake / Neutral)]
+    E --> F[Simulate Key Press (pyautogui)]
+    F --> G[Control Hill Climb Racing Game 🚗]
+```
 
 
 
