@@ -11,24 +11,43 @@ This project uses **Computer Vision** and **Automation** to simulate keyboard ke
 - 🎮 Controls game acceleration ("Gas") and braking ("Brake") automatically.
 - ⚡ Real-time gesture detection.
 - 🧠 Smart "Neutral" detection when no action is needed.
-- 🎨 Visual feedback with dynamic UI (gas, brake, neutral shown inside colorful circles).
+- 🎨 Visual feedback with dynamic UI (Gas, Brake, Neutral displayed in colorful circles).
 
 ---
 
-## 🏗 Project Architecture
+## 🏗 Architecture
 
+```plaintext
++-----------------+
+|  Webcam Input   |
++-----------------+
+         ↓
++-------------------------+
+| Frame Capture (OpenCV)  |
++-------------------------+
+         ↓
++------------------------------------+
+| Hand Detection (cvzone HandModule) |
++------------------------------------+
+         ↓
++-----------------------------+
+| Finger Count Calculation    |
++-----------------------------+
+         ↓
++----------------------------------+
+| Gesture Interpretation (Gas/Brake/Neutral) |
++----------------------------------+
+         ↓
++----------------------------+
+| Simulate Key Press (pyautogui) |
++----------------------------+
+         ↓
++---------------------+
+| Control Hill Climb   |
+| Racing Game 🚗       |
++---------------------+
+```
 
-
-## 🏗 Project Architecture
-
-```mermaid
-flowchart TD
-    A[Webcam Input] --> B[Frame Capture (OpenCV)]
-    B --> C[Hand Detection (cvzone HandTrackingModule)]
-    C --> D[Finger Count Calculation]
-    D --> E[Gesture Interpretation (Gas / Brake / Neutral)]
-    E --> F[Simulate Key Press (pyautogui)]
-    F --> G[Control Hill Climb Racing Game 🚗]
 
 ## 📦 Technologies Used
 
