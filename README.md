@@ -19,6 +19,8 @@ This project uses **Computer Vision** and **Automation** to simulate keyboard ke
 
 
 
+## 🏗 Project Architecture
+
 ```mermaid
 flowchart TD
     A[Webcam Input] --> B[Frame Capture (OpenCV)]
@@ -27,6 +29,7 @@ flowchart TD
     D --> E[Gesture Interpretation (Gas / Brake / Neutral)]
     E --> F[Simulate Key Press (pyautogui)]
     F --> G[Control Hill Climb Racing Game 🚗]
+
 
 
 ```
