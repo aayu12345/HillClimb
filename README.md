@@ -64,6 +64,11 @@ This project uses **Computer Vision** and **Automation** to simulate keyboard ke
 ### Clone the Repository:
 ```bash
 git clone https://github.com/aayu12345/HillClimb-HandGesture-Controller.git
-cd HillClimb-HandGesture-Controller
+```
+
+### Install required Libraries
+```bash
+pip install opencv-python cvzone pyautogui
+```
 
 
