@@ -30,3 +30,24 @@ This project uses **Computer Vision** and **Automation** to simulate keyboard ke
       ↓
 [Game Controlled Automatically]
 
+
+
+
+## 📦 Technologies Used
+
+- **Python 3.9+**
+- **OpenCV** - Real-time image processing.
+- **cvzone** - Simplified hand tracking.
+- **pyautogui** - Keyboard automation for game control.
+- **HandTrackingModule** (from cvzone) - Finger detection.
+
+---
+
+## 🚀 How to Run the Project
+
+### Clone the Repository:
+```bash
+git clone https://github.com/aayu12345/HillClimb-HandGesture-Controller.git
+cd HillClimb-HandGesture-Controller
+
+
