@@ -66,9 +66,25 @@ This project uses **Computer Vision** and **Automation** to simulate keyboard ke
 git clone https://github.com/aayu12345/HillClimb-HandGesture-Controller.git
 ```
 
-### Install required Libraries
+### Install required Libraries:
 ```bash
 pip install opencv-python cvzone pyautogui
 ```
+
+### Setup:
+
+1 - Run the script using :
+```bash
+python HillClimb.py
+```
+2 - Open Hill Climb Racing on your PC.
+
+3 - Allow webcam access.
+
+4 - Show 5 fingers to accelerate (presses Right Arrow key).
+
+5 - Show 0 fingers (closed fist) to brake (presses Left Arrow key).
+
+6 - Show any other number of fingers to stay Neutral.
 
 
